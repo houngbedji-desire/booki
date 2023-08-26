@@ -1,5 +1,8 @@
 
 /* HEADER */
+h2,p,a,input{
+    font-family:'Raleway', sans-serif; 
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -159,4 +162,83 @@ a:visited{
     border-color:#F2F2F2 ;
     z-index: 1px;
     text-align: center;  
+}
+/* HEBERGEMENTS */
+*{
+    margin: 0;
+    padding: 0;
+}
+.contener{
+    position: relative;
+    min-height: 600px;
+    background-color: #F2F2F2;
+    max-width: 60%;
+    border-radius: 30px;
+}
+.contener h1{
+    font-family: 'Raleway', sans-serif;
+}
+.contener .image-contener{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    height: 300px;
+}
+.contener .image-contener .image{
+    height: 150px;
+    width: 250px;
+    border: 5px  solid white;
+    border-bottom: 100px  solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.contener .image-contener .image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear ;
+}
+.contener .image-contener .image:hover img{
+    transform: scale(1.1);
+}
+
+.contener .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    height:100%;
+    width: 100%;
+    z-index: 100%;
+    display: none;
+}
+.contener .popup-image span{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+.contener .popup-image img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .contener .popup-image img{
+        width: 95%;
+    }
+
 }
