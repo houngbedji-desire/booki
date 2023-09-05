@@ -71,34 +71,194 @@
             <div><i class="fa-regular fa-circle-info"></i></div>
             <p>plus de 500 logements sont disponible dans cette ville</p>  
         </div> 
-        <div class="contener">
-            <h1>Hébergements à Marseille</h1>
-            <div class="image-contener">
-                <div class="image"><img src="images/hebergements/4_small/1.jpg" alt="1"></div>
-                <div class="image"><img src="images/hebergements/4_small/2.jpg" alt="2"></div>
-                <div class="image"><img src="images/hebergements/4_small/3.jpg" alt="3"></div>
-                <div class="image"><img src="images/hebergements/4_small/4.jpg" alt="4"></div>
-                <div class="image"><img src="images/hebergements/4_small/5.jpg" alt="5"></div>
-                <div class="image"><img src="images/hebergements/4_small/6.jpg" alt="6"></div>
-            </div>
-            <div class="popup-image">
-                <span>&times;</span>
-                <img src="images/hebergements/4_small/1.jpg" alt="1">
-            </div>
-
-            <script>
-            document.querySelectorAll('.image-contener img').forEach(Image => {
-                Image.onclick = () =>{
-                    document.querySelector('.popup-image').style.display = 'block';
-                    document.querySelector('.popup-image img').src = Image.getAttribute('src');
+        <div class="les-contener">
+            <div class="contener">
+                <h1>Hébergements à Marseille</h1>
+                <div class="image-contener">
+                    <div class="image">
+                        <img src="images/hebergements/4_small/1.jpg" alt="1">
+                        <div class="star1">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile1">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/hebergements/4_small/2.jpg" alt="2">
+                        <div class="star1">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile1">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/hebergements/4_small/3.jpg" alt="3">
+                        <div class="star1">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile1">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/hebergements/4_small/4.jpg" alt="4">
+                        <div class="star1">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile1">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/hebergements/4_small/5.jpg" alt="5">
+                        <div class="star1">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile1">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/hebergements/4_small/6.jpg" alt="6">
+                        <div class="star1">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile1">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>   
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="images/hebergements/4_small/1.jpg" alt="1">
+                    <div class="star1">
+                        <h4>hotel le soleil du matin</h4>
+                        <p>nuit à partir de 128£</p>
+                        <div class="etoile1">
+                            <i >&#9733</i>
+                            <i >&#9733</i>
+                            <i >&#9733</i>
+                            <i >&#9733</i>
+                            <i >&#9733</i>
+                        </div>   
+                    </div>
+                
+                </div>
+    
+                <script>
+                document.querySelectorAll('.image-contener img').forEach(Image => {
+                    Image.onclick = () =>{
+                        document.querySelector('.popup-image').style.display = 'block';
+                        document.querySelector('.popup-image img').src = Image.getAttribute('src');
+                    }
+                });
+                document.querySelector('.popup-image span').onclick = () =>{
+                    document.querySelector('.popup-image').style.display = 'none';
                 }
-            });
-            document.querySelector('.popup-image span').onclick = () =>{
-                document.querySelector('.popup-image').style.display = 'none';
-            }
-            </script>
+                </script>
+            </div>
+            <div class="contener2">
+                <h1>Les plus populaires</h1>
+                <div class="image-contener2">
+                    <div class="image2">
+                        <img src="images/hebergements/4_small/1'.jpg" alt="">
+                        <div class="star">
+                            <h4>hotel le soleil du matin</h4>
+                            <p>nuit à partir de 128£</p>
+                            <div class="etoile">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image2">
+                        <img src="images/hebergements/4_small/2'.jpg" alt="">
+                        <div class="star">
+                            <h4>Au coeur de l'eau <br>chambres d'hotes</h4>
+                            <p>la nuit à partir de 25</p>
+                            <div class="etoile">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image2">
+                        <img src="images/hebergements/4_small/3'.jpg" alt="">
+                        <div class="star">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>la nuit à partir de 25</p>
+                            <div class="etoile">
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                                <i >&#9733</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-image2">
+                    <span>&times;</span>
+                    <img src="images/hebergements/4_small/1'.jpg" alt="1">
+                </div>
+    
+                <script>
+                document.querySelectorAll('.image-contener2 img').forEach(Image => {
+                    Image.onclick = () =>{
+                        document.querySelector('.popup-image2').style.display = 'block';
+                        document.querySelector('.popup-image2 img').src = Image.getAttribute('src');
+                    }
+                });
+                document.querySelector('.popup-image2 span').onclick = () =>{
+                    document.querySelector('.popup-image2').style.display = 'none';
+                }
+                </script>
+            </div>
         </div>
-           
+        
+            
+
+        </div>
+        
     </main>
     <footer>
 
