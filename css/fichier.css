@@ -520,3 +520,14 @@ a:visited{
     display: flex;
     color: black;
 }
+.info{
+    display: flex;
+}
+.partage{
+    display: flex;
+}
+.partage i{
+    font-size: 16px;
+    align-items: center;
+    /* justify-content: center; */
+}
