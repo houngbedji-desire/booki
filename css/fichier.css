@@ -187,7 +187,7 @@ a:visited{
 }
 .contener .image-contener .image{
     background-color: white;
-    height: 220px;
+    height: 240px;
     width: 250px;
     border: 5px  solid white;
     /* border-bottom: 100px  solid white; */
@@ -246,13 +246,17 @@ a:visited{
 /* COTE DROIT */
 .contener2{
     /* position: relative; */
-    min-height: 700px;
+    min-height: 600px;
     background-color: #F2F2F2;
     max-width: 400px;
     border-radius: 30px;
 }
 .contener2 h1,h4{
     font-family: 'Raleway', sans-serif;
+}
+.contener2 h1{
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .contener2 .image-contener2{
     display: flex;
@@ -326,9 +330,8 @@ a:visited{
     justify-content: space-between;
 }
 .star{
-    text-align: initial;
+    text-align:initial;
     margin-top: 10px;
-    margin-left: 20px;
 }
 .etoile{
     color: #F2F2F2;
@@ -336,10 +339,184 @@ a:visited{
     font-size: 20px;
 }
 .star1{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
 }
 .etoile1{
     color: #F2F2F2;
     font-size: 20px;
+}
+/* ACTIVITEES */
+.image-contener3{
+    display: flex;
+    justify-content: center;
+    /* margin: 30px; */
+
+}
+.contener3 h1,h4{
+    font-family: 'Raleway', sans-serif;
+}
+.contener3 .image-contener3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 300px;
+}
+.contener3 .image-contener3 .image3a{
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+.contener3 .image-contener3 .image3a img{
+    height:350px;
+    width: 300px;
+    object-fit: cover;
+    transition: .2s linear ;
+}
+.contener3 .image-contener3 .image3:hover img{
+    transform: scale(1.1);
+}
+
+.contener3 .popup-image3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    height:100%;
+    width: 100%;
+    z-index: 100%;
+    display: none;
+}
+.contener3 .popup-image3 span{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+.contener3 .popup-image3 img{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .contene3 .popup-image3 img{
+        width: 95%;
+    }
+} 
+.contener3 .image-contener3 .image3b{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.contener3 .image-contener3 .image3b img{
+    height:150px;
+    width: 300px;
+    object-fit: cover;
+    transition: .2s linear ;
+}
+.contener3 .image-contener3 .image3c{
+    background-color: white;
+    height: 130px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+.contener3 .image-contener3 .image3c img{
+    height:80px;
+    width: 300px;
+    object-fit: cover;
+    transition: .2s linear ;
+}
+.contener3 .image-contener3 .image3d{
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 4;
+}
+.contener3 .image-contener3 .image3d img{
+    height:350px;
+    width: 300px;
+    object-fit: cover;
+    transition: .2s linear ;
+}
+.contener3 .image-contener3 .image3e{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.contener3 .image-contener3 .image3e img{
+    height:150px;
+    width: 300px;
+    object-fit: cover;
+    transition: .2s linear ;
+}
+.contener3 .image-contener3 .image3f{
+    background-color: white;
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.contener3 .image-contener3 .image3f img{
+    height:150px;
+    width: 300px;
+    object-fit: cover;
+    transition: .2s linear ;
+}   
+.footer{
+    min-height: 200px;
+    background-color: #F2F2F2;
+    max-width: 100%;
+    display: flex;
+    margin-top: 200px;
+    text-align:left;
+    align-items:center;
+} 
+.A-propos{
+    margin-right: 300px;
+    margin-left: 50px;
+}
+.nos-hébergements{
+    margin-right: 300px;
+}
+.footer p,h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+.fa-solid{
+    display: flex;
+    color: black;
 }

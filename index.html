@@ -78,7 +78,7 @@
                     <div class="image">
                         <img src="images/hebergements/4_small/1.jpg" alt="1">
                         <div class="star1">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Hotel de la mer</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile1">
                                 <i >&#9733</i>
@@ -92,7 +92,7 @@
                     <div class="image">
                         <img src="images/hebergements/4_small/2.jpg" alt="2">
                         <div class="star1">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Hotel du port</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile1">
                                 <i >&#9733</i>
@@ -106,7 +106,7 @@
                     <div class="image">
                         <img src="images/hebergements/4_small/3.jpg" alt="3">
                         <div class="star1">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Hotel les mouettes</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile1">
                                 <i >&#9733</i>
@@ -120,7 +120,7 @@
                     <div class="image">
                         <img src="images/hebergements/4_small/4.jpg" alt="4">
                         <div class="star1">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Hotel de la mer</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile1">
                                 <i >&#9733</i>
@@ -134,7 +134,7 @@
                     <div class="image">
                         <img src="images/hebergements/4_small/5.jpg" alt="5">
                         <div class="star1">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Auberge le panier</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile1">
                                 <i >&#9733</i>
@@ -148,7 +148,7 @@
                     <div class="image">
                         <img src="images/hebergements/4_small/6.jpg" alt="6">
                         <div class="star1">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Hotel chez amina</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile1">
                                 <i >&#9733</i>
@@ -164,18 +164,6 @@
                 <div class="popup-image">
                     <span>&times;</span>
                     <img src="images/hebergements/4_small/1.jpg" alt="1">
-                    <div class="star1">
-                        <h4>hotel le soleil du matin</h4>
-                        <p>nuit à partir de 128£</p>
-                        <div class="etoile1">
-                            <i >&#9733</i>
-                            <i >&#9733</i>
-                            <i >&#9733</i>
-                            <i >&#9733</i>
-                            <i >&#9733</i>
-                        </div>   
-                    </div>
-                
                 </div>
     
                 <script>
@@ -196,7 +184,7 @@
                     <div class="image2">
                         <img src="images/hebergements/4_small/1'.jpg" alt="">
                         <div class="star">
-                            <h4>hotel le soleil du matin</h4>
+                            <h4>Hotel le soleil du <br>matin</h4>
                             <p>nuit à partir de 128£</p>
                             <div class="etoile">
                                 <i >&#9733</i>
@@ -224,7 +212,7 @@
                     <div class="image2">
                         <img src="images/hebergements/4_small/3'.jpg" alt="">
                         <div class="star">
-                            <h4>Auberge la Cannebière</h4>
+                            <h4>Hotel Tout bleu et <br>Blan</h4>
                             <p>la nuit à partir de 25</p>
                             <div class="etoile">
                                 <i >&#9733</i>
@@ -254,14 +242,78 @@
                 </script>
             </div>
         </div>
-        
-            
+        <div class="contener3">
+            <div>
+                <h3>Activitées a à Marseille</h3>
+                <i class="fa-solid fa-chart-line-up"></i>
+            </div>
+            <div class="image-contener3">
+                <div class="image3a">
+                    <img src="images/activites/4_small/vieux -port.jpg" alt="">
+                    <h4>Vieux port</h4>
+                </div>   
+                <div class="bc">
+                    <div class="image3b">
+                        <img src="images/activites/4_small/fort -pomè.jpg" alt="">
+                        <h4>Fort de Pomègues</h4>
+                    </div>
+                    <div class="image3c">
+                        <img src="images/activites/4_small/iles.jpg" alt="">
+                        <h4>iles du Frioul</h4>
+                    </div>
+                </div>
+                <div class="image3d">
+                    <img src="images/activites/4_small/calanques.jpg" alt="">
+                    <h4>Paec national des calanques</h4>
+                </div>
+                <div class="ef">
+                    <div class="image3e">
+                        <img src="images/activites/4_small/notre-dame.jpg" alt="">
+                        <h4>Notre-Dame-De-La-Garde</h4>
+                    </div>
+                    <div class="image3f">
+                        <img src="images/activites/4_small/longchamp.jpg" alt="">
+                        <h4>Pacrc longchamp</h4>
+                    </div>
+                </div>
+                
+            <div class="popup-image3">
+                <span>&times;</span>
+                <img src="images/activites/4_small/vieux -port.jpg" alt="1">
+             </div>
+
+            <script>
+            document.querySelectorAll('.image-contener3 img').forEach(Image => {
+                Image.onclick = () =>{
+                    document.querySelector('.popup-image3').style.display = 'block';
+                    document.querySelector('.popup-image2 img').src = Image.getAttribute('src');
+                }
+            });
+            document.querySelector('.popup-image3 span').onclick = () =>{
+                document.querySelector('.popup-image2').style.display = 'none';
+            }
+            </script>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="A-propos">
+            <h3>A propos</h3>
+            <p>Fonctionnements du site</p>
+            <p>Conditions générales de ventes</p>
+            <p>Données et confidentialités</p>
+        </div>
+        <div class="nos-hébergements">
+            <h3>Nos Hébergements</h3>
+            <p>Charte qualité</p>
+            <p>Soummettre votre hotel</p>
+        </div>
+        <div class="assistance">
+            <h3>Assistance</h3>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
 
         </div>
-        
-    </main>
-    <footer>
-
     </footer>
 </body>
 </html>
